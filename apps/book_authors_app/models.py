@@ -6,8 +6,8 @@ class Book(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
 
-    def __repr__(self):
-        return f"<Book object: {self.title} {self.desc}>"
+    # def __repr__(self):
+    #     return f"<Book object: {self.title} {self.desc}>"
 
 class Author(models.Model):
     first_name = models.CharField(max_length=255)
@@ -17,5 +17,5 @@ class Author(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
 
-    def __repr__(self):
-        return f"<Author object: {self.first_name} {self.last_name}>"
+    # def __repr__(self):
+    #     return f"<Author object: {self.first_name} {self.last_name}>"
